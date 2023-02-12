@@ -1,8 +1,15 @@
 <script>
 export default {
-  name: "App",
+  data() {
+    return {
+      name: "Eldar",
+      surn: "Temirov",
+    };
+  },
 };
 </script>
+
 <template>
-  <h1>I am Eldar!</h1>
+  <p>{{ surn }}</p>
+  <p>{{ name }}</p>
 </template>
