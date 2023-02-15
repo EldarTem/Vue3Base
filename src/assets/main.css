@@ -19,7 +19,8 @@
 .main {  
   display:flex;
   align-items: center;
-  justify-content: center;;
+  justify-content: center;
+  flex-direction: column;
   width: 250px;
   height: 250px;
   background-color: #D3D3D3;
