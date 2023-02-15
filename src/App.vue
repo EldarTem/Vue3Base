@@ -1,12 +1,10 @@
 <template>
 	<div class="body">
 	  <div class="main">
-		<a href="fake.html" v-on:click.prevent
-		  ><p>KIPU SIMFEROPOL BEST UNIVERSITY!</p></a
-		>
+		<p v-if="visible">KIPU</p>
 	  </div>
 	  <div class="main">
-		<button v-on:click.once="haha">haha</button>
+		<p v-if="!visible">KIPU</p>
 	  </div>
 	</div>
   </template>
@@ -15,15 +13,8 @@
   export default {
 	data() {
 	  return {
-		cost: 10,
-		amount: 2,
+		visible: true,
 	  };
-	},
-	methods: {
-	  haha: function (i) {
-		alert("haha");
-		return false;
-	  },
 	},
   };
   </script>
