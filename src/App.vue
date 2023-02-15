@@ -1,13 +1,16 @@
 <template>
 	<div class="body">
 	  <div class="main">
-		<p v-if="visible">KIPU</p>
+		<p v-if="visible[0]">Simferopol</p>
+		<button @click="toggle(0)">{{ visible[0] ? "hide" : "show" }}</button>
 	  </div>
 	  <div class="main">
-		<button @click="hide" v-if="visible">hide</button>
+		<p v-if="visible[1]">KIPU</p>
+		<button @click="toggle(1)">{{ visible[1] ? "hide" : "show" }}</button>
 	  </div>
 	  <div class="main">
-		<button @click="show" v-if="!visible">show</button>
+		<p v-if="visible[2]">Informatics</p>
+		<button @click="toggle(2)">{{ visible[2] ? "hide" : "show" }}</button>
 	  </div>
 	</div>
   </template>
@@ -16,16 +19,14 @@
   export default {
 	data() {
 	  return {
-		visible: false,
+		visible: [true, true, true],
 	  };
 	},
 	methods: {
-	  hide: function () {
-		this.visible = false;
-	  },
-	  show: function () {
-		this.visible = true;
+	  toggle: function (n) {
+		this.visible[n] = !this.visible[n];
 	  },
 	},
   };
   </script>
+  
