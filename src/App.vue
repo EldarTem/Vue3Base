@@ -1,15 +1,10 @@
 <template>
 	<div class="body">
 	  <div class="main">
-		<div v-if="visible">
-		  <p>KIPU</p>
-		  <p>KIPU</p>
-		  <p>KIPU</p>
-		</div>
+		<ul>
+		  <li v-for="(i, key) in arr">{{ key }}</li>
+		</ul>
 	  </div>
-	  <dib class="main">
-		<button @click="toggle">Toggle</button>
-	  </dib>
 	</div>
   </template>
   
@@ -17,7 +12,7 @@
   export default {
 	data() {
 	  return {
-		visible: true,
+		arr: ["x", "y", "z"],
 	  };
 	},
 	methods: {
@@ -27,3 +22,4 @@
 	},
   };
   </script>
+  
