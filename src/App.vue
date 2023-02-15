@@ -1,8 +1,13 @@
 <template>
 	<div class="body">
 	  <div class="main">
-		<p v-if="isAdmin">Simferopol</p>
-		<p v-else>Sevastopol</p>
+		<p v-if="day === 1">Monday</p>
+		<p v-if="day === 2">Tuesday</p>
+		<p v-if="day === 3">Wednesday</p>
+		<p v-if="day === 4">Thursday</p>
+		<p v-if="day === 5">Friday</p>
+		<p v-if="day === 6">Saturday</p>
+		<p v-if="day === 7">Sunday</p>
 	  </div>
 	</div>
   </template>
@@ -11,9 +16,8 @@
   export default {
 	data() {
 	  return {
-		isAdmin: false,
+		day: 4,
 	  };
 	}
   };
   </script>
-  
