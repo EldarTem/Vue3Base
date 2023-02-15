@@ -8,6 +8,7 @@
   font-weight: normal;
 }
 
+
 div {
   display:flex;
   align-items: center;
@@ -16,8 +17,12 @@ div {
   height: 250px;
   background-color: #175da2;
   border-radius: 40px;
-}
-p {
-  font-size: x-large;
   color: white;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-size: 4em;
 }
