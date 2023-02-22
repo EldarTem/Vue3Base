@@ -2,16 +2,12 @@
 export default {
   data() {
     return {
-      obj: {
-        done: true,
-        selected: false,
-      },
     }
-  }
+  },
 }
 </script>
 <template>
-	<button @click="setDone">click</button>
+	<p :class="{ active: true, error: false }">кипу</p>
 </template>
 <style>
 
