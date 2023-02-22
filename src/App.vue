@@ -13,6 +13,7 @@ export default {
   }
 }
 </script>
+
 <template>
   <ul class="styled">
   <li v-for="(item, index) in 
@@ -24,6 +25,6 @@ export default {
   <br>
   <button @click="addcat">Добавить</button>
 </template>
-<style>
 
+<style>
 </style>
