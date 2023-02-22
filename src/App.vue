@@ -2,8 +2,10 @@
 export default {
   data() {
     return {
+      isValid: true,
+      isDisabled: true,
     }
-  },
+  }
 }
 </script>
 <template>
