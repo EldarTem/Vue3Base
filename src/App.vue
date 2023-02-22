@@ -10,6 +10,7 @@ export default {
   }
 }
 </script>
+
 <template>
 	<p :class="obj">text</p>
 </template>
