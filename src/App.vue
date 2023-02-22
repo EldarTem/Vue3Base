@@ -7,13 +7,12 @@ export default {
     }
   },
   methods: {
-    addcat: function () {
+    removecat: function () {
       this.cat.unshift(this.cat);
     }
   }
 }
 </script>
-
 <template>
   <ul class="styled">
   <li v-for="(item, index) in 
@@ -23,8 +22,8 @@ export default {
   </ul>
   <input class="text-field__input" v-model="bmteaw">
   <br>
-  <button @click="addcat">Добавить</button>
+  <button @click="removecat">Удалить</button>
 </template>
-
 <style>
+
 </style>
