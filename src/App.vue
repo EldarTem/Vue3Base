@@ -2,14 +2,13 @@
 export default {
   data() {
     return {
-      isValid: true,
-      isDisabled: true,
     }
   }
 }
 </script>
 <template>
-	<p :class="{ active: true, error: false }">кипу</p>
+  <p :style="{ color: 'green', background: 'yellow' }">КИПУ</p>
+  <p :style="{ fontWeight: 'bold', fontStyle: 'italic' }">Симферополь</p>
 </template>
 <style>
 
