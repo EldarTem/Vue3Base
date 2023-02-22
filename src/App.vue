@@ -8,6 +8,7 @@ export default {
   }
 }
 </script>
+
 <template>
   <input class="text-field__input" v-model="cat">
   <p>{{ cat }}</p>
@@ -15,6 +16,6 @@ export default {
   <a href="#" class="inline-link-1" >cat</a>
   <p ></p>
 </template>
-<style>
 
+<style>
 </style>
