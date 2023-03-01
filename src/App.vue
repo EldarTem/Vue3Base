@@ -14,8 +14,9 @@ export default {
 </script>
 
 <template>
-
+  <Employee name="Эльдар" surn="Темиров" age="19" />
 </template>
+
 <style>
 
 </style>
