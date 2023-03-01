@@ -6,16 +6,17 @@ export default {
   },
   data() {
     return {
-      name: 'Эльдар',
+      name: '"Эльдар"',
       surn: 'Темиров',
       age: 19,
+      value: true,
     }
   }
 }
 </script>
 
 <template>
-  <Employee :name="name" :surn="surn" :age="age" />
+  <Employee :name="name" :surn="surn" :age="age" :value="value" />
 </template>
 
 <style>
